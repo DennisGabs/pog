@@ -1,18 +1,28 @@
 package cn.livraria;
 
-public class Livro {
+public class Livro implements Details{
     private String nome;
     private String descricao;
     private double valor;
     private String isbn;
+    private Autor autor;
 
     public Livro(){}
 
-    public Livro(String nome, String descricao, double valor, String isbn){
+    public Livro(String nome, String descricao, double valor, String isbn, Autor autor){
         this.nome = nome;
         this.descricao = descricao;
         this.valor = valor;
         this.isbn = isbn;
+        this.autor = autor;
+    }
+
+    public Autor getAutor(){
+        return autor;
+    }
+
+    public void setAutor(Autor autor){
+        this.autor = autor;
     }
 
     public String getIsbn() {
@@ -47,6 +57,7 @@ public class Livro {
         this.nome = nome;
     }
 
+
     @Override
     public String toString() {
         return "Livro{" +
@@ -55,5 +66,14 @@ public class Livro {
                 ", valor=" + valor +
                 ", isbn='" + isbn + '\'' +
                 '}';
+    }
+
+    @Override
+    public void mostrarDetalhes(){
+        System.out.println("nome: " + nome);
+        System.out.println("descricao: "+ descricao);
+        System.out.println("isbn: " + isbn);
+        System.out.println("valor: " + valor);
+        autor.mostrarDetalhes();
     }
 }

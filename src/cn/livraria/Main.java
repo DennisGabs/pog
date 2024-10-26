@@ -4,7 +4,7 @@ public class Main {
     public static void main(String[] args) {
         Livro livro = new Livro("Aventuras de Dennis Lindo",
                               "belas aventuras",
-                            20.000, "XXXXXXXXXX-X");
+                            20.000, "XXXXXXXXXX-X", new Autor());
         System.out.println(livro.getNome());
         System.out.println(livro);
 

@@ -31,9 +31,10 @@ public class Autor implements Details {
 
     @Override
     public void mostrarDetalhes(){
-        System.out.println("nome do autor: " + nomeDoAutor);
-        System.out.println("email do autor: " + emailDoAutor);
-        System.out.println("cpf do autor: " + cpfDoAutor);
+        System.out.println("Detalhes do Autor: ");
+        System.out.println("Nome do autor: " + nomeDoAutor);
+        System.out.println("Email do autor: " + emailDoAutor);
+        System.out.println("CPF do autor: " + cpfDoAutor);
     }
 
 }

@@ -70,10 +70,13 @@ public class Livro implements Details{
 
     @Override
     public void mostrarDetalhes(){
+        System.out.println("=====================");
+        System.out.println("Detalhes do Livro");
         System.out.println("nome: " + nome);
         System.out.println("descricao: "+ descricao);
         System.out.println("isbn: " + isbn);
         System.out.println("valor: " + valor);
         autor.mostrarDetalhes();
+        System.out.println("=====================");
     }
 }

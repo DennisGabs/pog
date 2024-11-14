@@ -5,6 +5,14 @@ public class Autor implements Details {
     private String emailDoAutor;
     private String cpfDoAutor;
 
+    public Autor() {}
+
+    public Autor(String nome, String email, String cpf) {
+        this.nomeDoAutor = nome;
+        this.emailDoAutor = email;
+        this.cpfDoAutor = cpf;
+    }
+
     public String getNomeDoAutor() {
         return nomeDoAutor;
     }

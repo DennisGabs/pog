@@ -1,4 +1,6 @@
-package cn.livraria;
+package cn.livraria.entities;
+
+import cn.livraria.interfaces.Details;
 
 public class Autor implements Details {
     private String nomeDoAutor;

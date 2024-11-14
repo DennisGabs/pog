@@ -1,6 +1,8 @@
-package cn.livraria;
+package cn.livraria.entities;
 
-public class Livro implements Details{
+import cn.livraria.interfaces.Details;
+
+public class Livro implements Details {
     private String nome;
     private String descricao;
     private double valor;

@@ -1,4 +1,7 @@
-package cn.livraria;
+package cn.livraria.application;
+
+import cn.livraria.entities.Autor;
+import cn.livraria.entities.Livro;
 
 public class TesteSobreCarga {
     public static void main(String[] args) {

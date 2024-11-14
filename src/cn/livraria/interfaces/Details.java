@@ -1,4 +1,4 @@
-package cn.livraria;
+package cn.livraria.interfaces;
 
 public interface Details {
     void mostrarDetalhes();

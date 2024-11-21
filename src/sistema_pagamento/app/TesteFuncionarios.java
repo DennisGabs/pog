@@ -1,6 +1,6 @@
 package sistema_pagamento.app;
 
-import sistema_pagamento.entities.dto.FuncionarioDTO;
+import sistema_pagamento.entities.Funcionario;
 import sistema_pagamento.entities.FuncionarioComissionado;
 import sistema_pagamento.entities.FuncionarioComum;
 import sistema_pagamento.entities.FuncionarioHorista;
@@ -10,7 +10,7 @@ import java.util.List;
 
 public class TesteFuncionarios {
     public static void main(String[] args) {
-        List<FuncionarioDTO> listFuncionarios = new ArrayList<>();
+        List<Funcionario> listFuncionarios = new ArrayList<>();
 
         FuncionarioComum funcionarioComum = new FuncionarioComum();
         funcionarioComum.setNome("Dennis Comum");
@@ -36,7 +36,7 @@ public class TesteFuncionarios {
 
         listFuncionarios.add(funcionarioHorista);
 
-        for(FuncionarioDTO funcionario : listFuncionarios){
+        for(Funcionario funcionario : listFuncionarios){
             System.out.println(funcionario);
         }
 

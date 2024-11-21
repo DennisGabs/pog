@@ -1,6 +1,6 @@
-package sistema_pagamento.entities.dto;
+package sistema_pagamento.entities;
 
-public abstract class FuncionarioDTO {
+public abstract class Funcionario {
     private String nome;
     private String cpf;
 

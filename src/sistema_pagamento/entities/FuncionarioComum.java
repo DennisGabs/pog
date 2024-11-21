@@ -1,8 +1,6 @@
 package sistema_pagamento.entities;
 
-import sistema_pagamento.entities.dto.FuncionarioDTO;
-
-public class FuncionarioComum extends FuncionarioDTO {
+public class FuncionarioComum extends Funcionario {
     private double salarioMensal;
 
     public double getSalarioMensal() {

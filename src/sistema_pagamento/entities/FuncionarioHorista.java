@@ -1,8 +1,6 @@
 package sistema_pagamento.entities;
 
-import sistema_pagamento.entities.dto.FuncionarioDTO;
-
-public class FuncionarioHorista extends FuncionarioDTO {
+public class FuncionarioHorista extends Funcionario {
 
     private int horasTrabalhadas;
     private double valorHora;

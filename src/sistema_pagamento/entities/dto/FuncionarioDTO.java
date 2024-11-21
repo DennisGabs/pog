@@ -25,6 +25,7 @@ public abstract class FuncionarioDTO {
     public String toString(){
         return "Nome da classe: " + getClass().getSimpleName()
                 + "\nNome: " + nome
-                + "\nCPF: " + cpf + "\n";
+                + "\nCPF: " + cpf
+                + "\nsalario: "+ calcularSalario() +"\n";
     }
 }

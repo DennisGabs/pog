@@ -11,7 +11,7 @@ import java.util.List;
 public class TesteFuncionarios {
     public static void main(String[] args) {
         List<FuncionarioDTO> listFuncionarios = new ArrayList<>();
-        
+
         FuncionarioComum funcionarioComum = new FuncionarioComum();
         funcionarioComum.setNome("Dennis Comum");
         funcionarioComum.setCpf("123");

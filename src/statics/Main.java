@@ -1,4 +1,4 @@
-package abstracts;
+package statics;
 
 public class Main {
     public static void main(String[] args) {
@@ -9,6 +9,8 @@ public class Main {
         // Funcionario funcionario2 =
         new Funcionario("Gabriel", 50000.0);
         System.out.println(Funcionario.salarioTotal);
+
+        System.out.println(Math.PI);
 
     }
 }

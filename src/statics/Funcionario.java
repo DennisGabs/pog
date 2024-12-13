@@ -1,4 +1,4 @@
-package abstracts;
+package statics;
 
 public class Funcionario {
     static double salarioTotal;

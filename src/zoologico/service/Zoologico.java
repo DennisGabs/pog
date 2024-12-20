@@ -9,7 +9,6 @@ import java.util.List;
 public class Zoologico {
     private List<Animal> animais = new ArrayList();
     private List<Funcionario> funcionarios = new ArrayList<>();
-    int totalAnimais = 0;
 
     public void adicionarAnimal(Animal animal){
         this.animais.add(animal);

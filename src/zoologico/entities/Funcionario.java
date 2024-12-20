@@ -39,6 +39,15 @@ public class Funcionario {
     }
 
     public void cuidarAnimal(Animal animal){
-        System.out.println(this.nome + " está cuidando do animal " + animal.getNome());
+        System.out.println(this.nome + " está cuidando do animal " + animal);
+    }
+
+    @Override
+    public String toString() {
+        return "Funcionario{" +
+                " id=" + id +
+                ", nome='" + nome + '\'' +
+                ", especialidade='" + especialidade + '\'' +
+                '}';
     }
 }

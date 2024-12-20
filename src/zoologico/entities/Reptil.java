@@ -26,4 +26,11 @@ public class Reptil extends Animal {
     public String getTipo() {
         return TIPO;
     }
+
+    @Override
+    public String toString() {
+        return "Reptil{" + super.toString() +
+                ", temperaturaCorporal=" + temperaturaCorporal +
+                '}';
+    }
 }

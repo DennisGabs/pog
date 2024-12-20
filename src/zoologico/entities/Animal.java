@@ -41,4 +41,11 @@ public abstract class Animal {
     public void setEspecie(String especie) {
         this.especie = especie;
     }
+
+    @Override
+    public String toString() {
+        return "  id=" + id +
+                ", nome='" + nome + '\'' +
+                ", especie='" + especie;
+    }
 }

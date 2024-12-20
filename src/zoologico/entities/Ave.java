@@ -23,6 +23,13 @@ public class Ave extends Animal {
     }
 
     @Override
+    public String toString() {
+        return "Ave{" + super.toString() +
+                ", tipoPenas='" + tipoPenas + '\'' +
+                '}';
+    }
+
+    @Override
     public String getTipo() {
         return TIPO;
     }

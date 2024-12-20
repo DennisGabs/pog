@@ -26,4 +26,11 @@ public class Mamifero extends Animal{
     public String getTipo() {
         return TIPO;
     }
+
+    @Override
+    public String toString() {
+        return "Mamifero{" + super.toString() +
+                ", tempoGestacao=" + tempoGestacao +
+                '}';
+    }
 }

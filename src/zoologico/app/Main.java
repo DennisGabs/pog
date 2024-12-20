@@ -29,5 +29,7 @@ public class Main {
 
         zoo.alterarNomeAnimal(papagaio, "Caqui");
 
+        System.out.println("Total animais:s " + Animal.totalAnimais);
+
     }
 }

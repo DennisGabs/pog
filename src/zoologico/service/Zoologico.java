@@ -19,14 +19,20 @@ public class Zoologico {
         this.funcionarios.add(funcionario);
     }
 
-    public void cuidarAnimais(){
-
+    public void cuidarAnimais() throws ClassNotFoundException {
+        for (Funcionario funcionario : funcionarios) {
+            for (Animal animal : animais) {
+                if(animal.getTipo().equals(funcionario.getEspecialidade())){
+                    funcionario.cuidarAnimal(animal);
+                }
+            }
+        }
     }
 
     // Poderia ser da classe Animal?
     public void alterarNomeAnimal(Animal animal, String novoNome){
         String temp = animal.getNome();
         animal.setNome(novoNome);
-        System.out.println("Antigo nome do animal: " + temp + " agora é: " + animal.getNome());
+        System.out.println("Alterado nome do animal -> Antigo: " + temp + " agora é: " + animal.getNome());
     }
 }

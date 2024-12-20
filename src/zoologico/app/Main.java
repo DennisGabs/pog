@@ -1,21 +1,33 @@
 package zoologico.app;
 
-import zoologico.entities.Animal;
-import zoologico.entities.Funcionario;
-import zoologico.entities.Reptil;
+import zoologico.entities.*;
 import zoologico.service.Zoologico;
 
 public class Main {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws ClassNotFoundException {
         Zoologico zoo = new Zoologico();
-        Reptil cobra = new Reptil();
-        cobra.setNome("Jara");
-        cobra.setEspecie("Jararaca");
-        cobra.setTemperaturaCorporal(27.8f);
+        Reptil cobra = new Reptil("Jara", "Jararaca", 27.8f);
         zoo.adicionarAnimal(cobra);
 
-        Funcionario funcionario = new Funcionario();
-        funcionario.setNome("Dennis");
-        funcionario.setEspecialidade("Repteis");
+        Mamifero cachorro = new Mamifero("Black", "Pudle");
+        cachorro.setTempoGestacao(2);
+        zoo.adicionarAnimal(cachorro);
+
+        Ave papagaio = new Ave("Loro", "falante");
+        papagaio.setTipoPenas("Verde");
+        zoo.adicionarAnimal(papagaio);
+
+        Funcionario dennis = new Funcionario("Dennis", Reptil.TIPO);
+        Funcionario silva = new Funcionario("Silva", Ave.TIPO);
+        Funcionario alves = new Funcionario("Alves", Mamifero.TIPO);
+
+        zoo.adicionarFunciorio(dennis);
+        zoo.adicionarFunciorio(silva);
+        zoo.adicionarFunciorio(alves);
+
+        zoo.cuidarAnimais();
+
+        zoo.alterarNomeAnimal(papagaio, "Caqui");
+
     }
 }

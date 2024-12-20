@@ -1,10 +1,12 @@
 package zoologico.entities;
 
-public class Ave extends Animal{
+
+public class Ave extends Animal {
+    public static final String TIPO = "Ave";
     private String tipoPenas;
 
-    public Ave(){
-        totalAnimais += 1;
+    public Ave(String nome, String especie) {
+        super(nome, especie);
     }
 
     public void setTipoPenas(String tipoPenas) {
@@ -17,6 +19,11 @@ public class Ave extends Animal{
 
     @Override
     protected void emitirSom() {
-        System.out.println("Eu sou uma ave");
+        System.out.println( getNome() +" é uma ave");
+    }
+
+    @Override
+    public String getTipo() {
+        return TIPO;
     }
 }

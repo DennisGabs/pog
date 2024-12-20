@@ -11,6 +11,13 @@ public class Funcionario {
         id = totalFuncionarios;
     }
 
+    public Funcionario(String nome, String especialidade){
+        totalFuncionarios += 1;
+        this.id = totalFuncionarios;
+        this.nome = nome;
+        this.especialidade = especialidade;
+    }
+
     public int getId() {
         return id;
     }
@@ -31,7 +38,7 @@ public class Funcionario {
         this.especialidade = especialidade;
     }
 
-    void cuidarAnimal(Animal animal){
+    public void cuidarAnimal(Animal animal){
         System.out.println(this.nome + " está cuidando do animal " + animal.getNome());
     }
 }

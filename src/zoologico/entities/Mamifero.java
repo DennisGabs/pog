@@ -1,12 +1,13 @@
 package zoologico.entities;
 
 public class Mamifero extends Animal{
+    public static final String TIPO = "Mamifero";
     private int tempoGestacao;
 
-
-    public Mamifero(){
-        totalAnimais += 1;
+    public Mamifero(String nome, String especie){
+        super(nome, especie);
     }
+
 
     public void setTempoGestacao(int tempoGestacao) {
         this.tempoGestacao = tempoGestacao;
@@ -18,6 +19,11 @@ public class Mamifero extends Animal{
 
     @Override
     protected void emitirSom() {
-        System.out.println("Sou mamifero");
+        System.out.println( getNome() + " é um mamifero");
+    }
+
+    @Override
+    public String getTipo() {
+        return TIPO;
     }
 }

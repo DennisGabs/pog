@@ -6,6 +6,7 @@ public class Main {
         new Funcionario("Dennis", 20000.5);
         System.out.println(Funcionario.salarioTotal);
 
+
         // Funcionario funcionario2 =
         new Funcionario("Gabriel", 50000.0);
         System.out.println(Funcionario.salarioTotal);
